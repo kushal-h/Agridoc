@@ -128,3 +128,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#testing files
+model.h5
+media
+read_pickelfile.py
