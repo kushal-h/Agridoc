@@ -130,6 +130,11 @@ dmypy.json
 .pyre/
 
 #testing files
-model.h5
+
 media
 read_pickelfile.py
+
+#models
+model.h5
+weights.h5
+mobilenet.h5
