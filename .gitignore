@@ -138,4 +138,4 @@ read_pickelfile.py
 model.h5
 weights.h5
 mobilenet.h5
-128_sized_model.h5
+templates/128_sized_model.h5
