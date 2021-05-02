@@ -43,17 +43,14 @@ def predict(request):
             image = np.expand_dims(image, axis=0)
 
 
-            # messages.success(request, 'working fine')
-
             #Prediction
             result = model.predict([image])
             print(result)
             r = np.argmax(result, axis=1)
             print("the results are!",r, type(r))
-            #
             pred =data[r[0]]
             print(pred)
-
+            messages.success(request, "the disease and plants name is",data[r[0]])
             img_path = ImagePath()
             img_path.path = file_path
             img_db = Predictions()
