@@ -50,7 +50,7 @@ def predict(request):
             print("the results are!",r, type(r))
             pred =data[r[0]]
             print(pred)
-            messages.success(request, "the disease and plants name is",data[r[0]])
+            messages.success(request, data[r[0]])
             img_path = ImagePath()
             img_path.path = file_path
             img_db = Predictions()
