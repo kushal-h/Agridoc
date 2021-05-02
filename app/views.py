@@ -1,5 +1,4 @@
 import os
-import cv2
 from django.contrib import messages
 from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render
