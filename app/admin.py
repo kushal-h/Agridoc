@@ -6,4 +6,4 @@ from .models import *
 class PredictionModel(admin.ModelAdmin):
     list_display = ['id','image_path','prediction']
     list_filter = ['prediction']
-
+    icon_name = 'mms perm_identity compare'
