@@ -27,13 +27,16 @@ SECRET_KEY = 'x(8$8bp$le^cpl^ydsxtcd+y93ka^e3ch%m%=5z=$1p$5)!kiy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'material',
+    'material.admin',
+    'material.admin.default',
+    #'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -131,3 +134,20 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+"""
+Admin page design
+"""
+
+MATERIAL_ADMIN_SITE = {
+    'HEADER':  ('Agridoc Admin'),  # Admin site header
+    'TITLE':  ('Welcome to the Agridoc Admin Page you can see over results here'),  # Admin site title
+        #'FAVICON':  'path/to/favicon',   # Admin site favicon (path to static should be specified)
+    'MAIN_BG_COLOR':  'red',  # Admin site main color, css color should be specified
+     'SHOW_THEMES':  True,  #  Show default admin themes button
+    'TRAY_REVERSE': True,  # Hide object-tools and additional-submit-line by default
+    'NAVBAR_REVERSE': True,  # Hide side navbar by default
+    'SHOW_COUNTS': True, # Show instances counts for each model
+
+    }
