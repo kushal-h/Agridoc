@@ -12,12 +12,20 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+    border: 10px solid #555;
+
 }
+ input[type=submit] {
+
+        background: #16efa3;
+
+      }
+
 </style>
 
     <img src= "{{image_source.path}}" alt="leaf image" width="300" height="300">
 </head>
-<body>
+<body align="center">
 {% if messages %}
 <ul class="messages">
     {% for message in messages %}
@@ -25,7 +33,7 @@ img {
     {% endfor %}
 </ul>
 {% endif %}
-<form >
+<form>
 
     <br><br>
     <br>
